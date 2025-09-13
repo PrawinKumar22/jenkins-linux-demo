@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        FRONTEND_REPO = 'gopinath4113/frontend-app'
-        BACKEND_REPO  = 'gopinath4113/backend-app'
+        FRONTEND_REPO = 'prawinkumar22/frontend-app'
+        BACKEND_REPO  = 'prawinkumar22/backend-app'
         IMAGE_TAG     = "${env.GIT_COMMIT.take(7)}"  // short commit hash
     }
 
@@ -13,7 +13,7 @@ pipeline {
         // =========================
         stage('Checkout Code') {
             steps {
-                git branch: 'master', url: 'https://github.com/Gopinathpazhani/ekart.git'
+                git branch: 'master', url: 'https://github.com/PrawinKumar22/jenkins-linux-demo.git'
             }
         }
 
