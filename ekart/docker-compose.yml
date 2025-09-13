@@ -34,7 +34,7 @@ services:
       retries: 5
 
   backend:
-    image: gopinath4113/backend-app:latest
+    image: prawinkumar22/backend-app:latest
     container_name: backend-container
     restart: always
     ports:
@@ -51,7 +51,7 @@ services:
         condition: service_healthy
 
   frontend:
-    image: anandh15/frontend-app:latest
+    image: prawinkumar22/frontend-app:latest
     container_name: frontend-container
     restart: always
     ports:
